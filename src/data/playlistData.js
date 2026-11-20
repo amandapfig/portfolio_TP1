@@ -136,6 +136,7 @@ export const PROJECTS = [
     description:
       "Plataforma para registro e acompanhamento de problemas em ciclovias. Solução voltada à segurança, mobilidade urbana e incentivo ao ciclismo.",
     githubUrl: "https://github.com/amandapfig",
+    image: "/images/pedalaki.png",
     accent: "from-sky",
   },
   {
@@ -145,7 +146,8 @@ export const PROJECTS = [
     techs: ["Python", "Tkinter"],
     description:
       "Aplicação em Python com interface gráfica desenvolvida em Tkinter, exibindo a hora em tempo real e realizando sua atualização automática.",
-    githubUrl: "https://github.com/amandapfig/Curso-Udemy-Algoritmos-Relogio.git",
+    githubUrl: "https://github.com/amandapfig",
+    image: "/images/relogio.png",
     accent: "from-royal",
   },
   {
@@ -155,18 +157,31 @@ export const PROJECTS = [
     techs: ["Python"],
     description:
       "Desenvolvimento de um jogo com seleção aleatória de palavras e sistema de tentativas. Aplicação de listas, strings, condicionais, loops, funções e modularização para estruturar a lógica do jogo.",
-    githubUrl: "https://github.com/amandapfig/Curso-Udemy---Algoritmos---Jogo-da-forca.git",
+    githubUrl: "https://github.com/amandapfig",
+    image: "/images/forca.png",
     accent: "from-cobalt",
   },
   {
     id: "jogo-de-corrida",
     trackCode: "EP 04",
-    title: "Turbo Escape",
+    title: "JOGO DE CORRIDA",
     techs: ["Python", "Pygame"],
     description:
       "Desenvolvimento em equipe de um jogo de corrida 2D com obstáculos, moedas e aumento progressivo de dificuldade. Implementação de sistema de vidas, pontuação, loja de veículos, rankings e salvamento de dados entre sessões.",
-    githubUrl: "https://github.com/Deignaura/TrabalhoPratico.git",
+    githubUrl: "https://github.com/amandapfig",
+    image: "/images/corrida.png",
     accent: "from-indigo",
+  },
+  {
+    id: "pimenta-sabor",
+    trackCode: "EP 05",
+    title: "PIMENTASABOR",
+    techs: ["HTML", "CSS", "JavaScript", "JSON Server"],
+    description:
+      "Plataforma de indicações de restaurantes em Belo Horizonte desenvolvida na disciplina de DIW (1º semestre), com carrossel, cards, gráfico, sistema de login/cadastro, favoritos e CRUD completo para administradores.",
+    githubUrl: "https://github.com/amandapfig/Trabalho-de-DIW---1.git",
+    image: "/images/restaurante.png",
+    accent: "from-sky",
   },
 ];
 

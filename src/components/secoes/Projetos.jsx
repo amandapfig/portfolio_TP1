@@ -14,10 +14,21 @@ export function Projetos() {
       <div className="projects-grid">
         {PROJECTS.map((projeto) => (
           <article key={projeto.id} className="project-album-card">
-            <div className={"project-cover " + projeto.accent}>
-              <span className="ep-tag">{projeto.trackCode}</span>
-              <strong>{projeto.title}</strong>
-            </div>
+            {projeto.image ? (
+              <div className="project-media-box">
+                <img
+                  src={projeto.image}
+                  alt={"Preview de " + projeto.title}
+                  className="project-media-img"
+                />
+                <span className="ep-badge">{projeto.trackCode}</span>
+              </div>
+            ) : (
+              <div className={"project-cover " + projeto.accent}>
+                <span className="ep-tag">{projeto.trackCode}</span>
+                <strong>{projeto.title}</strong>
+              </div>
+            )}
 
             <div className="project-card-body">
               <h3>{projeto.title}</h3>
