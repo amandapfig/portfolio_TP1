@@ -135,7 +135,7 @@ export const PROJECTS = [
     techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Plataforma para registro e acompanhamento de problemas em ciclovias. Solução voltada à segurança, mobilidade urbana e incentivo ao ciclismo.",
-    githubUrl: "https://github.com/amandapfig",
+    githubUrl: "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2026-1-ti1-7620100-pedalaki.git",
     image: "/images/pedalaki.png",
     accent: "from-sky",
   },
@@ -146,7 +146,7 @@ export const PROJECTS = [
     techs: ["Python", "Tkinter"],
     description:
       "Aplicação em Python com interface gráfica desenvolvida em Tkinter, exibindo a hora em tempo real e realizando sua atualização automática.",
-    githubUrl: "https://github.com/amandapfig",
+    githubUrl: "https://github.com/amandapfig/Curso-Udemy-Algoritmos-Relogio.git",
     image: "/images/relogio.png",
     accent: "from-royal",
   },
@@ -157,7 +157,7 @@ export const PROJECTS = [
     techs: ["Python"],
     description:
       "Desenvolvimento de um jogo com seleção aleatória de palavras e sistema de tentativas. Aplicação de listas, strings, condicionais, loops, funções e modularização para estruturar a lógica do jogo.",
-    githubUrl: "https://github.com/amandapfig",
+    githubUrl: "https://github.com/amandapfig/Curso-Udemy---Algoritmos---Jogo-da-forca.git",
     image: "/images/forca.png",
     accent: "from-cobalt",
   },
@@ -168,7 +168,7 @@ export const PROJECTS = [
     techs: ["Python", "Pygame"],
     description:
       "Desenvolvimento em equipe de um jogo de corrida 2D com obstáculos, moedas e aumento progressivo de dificuldade. Implementação de sistema de vidas, pontuação, loja de veículos, rankings e salvamento de dados entre sessões.",
-    githubUrl: "https://github.com/amandapfig",
+    githubUrl: "https://github.com/Deignaura/TrabalhoPratico.git",
     image: "/images/corrida.png",
     accent: "from-indigo",
   },
