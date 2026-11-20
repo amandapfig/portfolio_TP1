@@ -73,7 +73,7 @@ O objetivo deste projeto é apresentar minha trajetória acadêmica, habilidades
 * **Organização por Faixas:**
   * **Faixa 01 — Who Am I?:** Apresentação pessoal, foto, perfil e objetivos profissionais.
   * **Faixa 02 — My Skills:** Linguagens de programação, desenvolvimento web e ferramentas.
-  * **Faixa 03 — My Projects:** Projetos acadêmicos (**PEDALAKI**, **Relógio Digital**, **Jogo da Forca** e **Jogo de Corrida**).
+  * **Faixa 03 — My Projects:** Projetos acadêmicos (**PEDALAKI**, **Relógio Digital**, **Jogo da Forca**, **TurboEscape** e **PimentaSabor**).
   * **Faixa 04 — Beyond the Code:** Hobbies, esportes (handebol e basquete), música e interesses pessoais.
   * **Faixa 05 — My Journey:** Formação acadêmica na PUC Minas e idiomas (Português nativo e Inglês avançado).
   * **Faixa 06 — Let’s Connect:** Links diretos de contato e formulário funcional.
@@ -204,12 +204,12 @@ npm run build
 
 ## 📂 Estrutura de Pastas
 
-```text
 amanda-pimenta-portfolio/
 ├── .env.example                 # Modelo das variáveis de ambiente (sem chaves sensíveis)
 ├── .env.local                   # Variáveis locais do EmailJS (não versionado)
 ├── .gitignore                   # Arquivos e pastas ignorados pelo Git
 ├── index.html                   # Documento HTML principal
+├── package-lock.json            # Controle de versões exatas das dependências
 ├── package.json                 # Dependências e scripts do projeto
 ├── vite.config.js               # Configuração do Vite
 ├── README.md                    # Documentação principal do projeto
@@ -217,8 +217,13 @@ amanda-pimenta-portfolio/
 ├── /public
 │   └── /images
 │       ├── amanda.jpg           # Foto pessoal exibida na seção Sobre Mim
+│       ├── corrida.png          # Preview do projeto Jogo de Corrida
+│       ├── forca.png            # Preview do projeto Jogo da Forca
+│       ├── pedalaki.png         # Preview do projeto Pedalaki
 │       ├── preview-entrada.png  # Print da tela inicial (Demonstração)
-│       └── preview-playlist.png # Print da tela principal (Demonstração)
+│       ├── preview-playlist.png # Print da tela principal (Demonstração)
+│       ├── relogio.png          # Preview do projeto Relógio Digital
+│       └── restaurante.png      # Preview do projeto PimentaSabor
 │
 └── /src
     ├── App.css                  # Estilização global em tons de azul e responsividade
@@ -239,7 +244,6 @@ amanda-pimenta-portfolio/
             ├── Hobbies.jsx
             ├── Formacao.jsx
             └── Contato.jsx
-```
 
 ---
 
