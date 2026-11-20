@@ -1415,6 +1415,13 @@ button {
   background: var(--blue-800);
 }
 
+.site-footer {
+  padding: 1.25rem 1.75rem;
+  border-top: 1px solid var(--blue-800);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
 /* Responsividade */
 @media (max-width: 960px) {
   .entry-showcase {

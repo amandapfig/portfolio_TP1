@@ -103,6 +103,9 @@ export default function App() {
               </div>
             </div>
           )}
+          <footer className="site-footer">
+            <p>© {new Date().getFullYear()} Amanda Pimenta • Engenharia de Software — PUC Minas</p>
+          </footer>
         </main>
       </div>
     </div>
