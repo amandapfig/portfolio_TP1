@@ -1343,3 +1343,28 @@ button {
     height: 160px;
   }
 }
+
+/* Botão de voltar dentro da aba da faixa */
+.track-topbar {
+  padding: 1.5rem 1.75rem 1rem;
+}
+
+.btn-back-playlist {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(19, 42, 99, 0.7);
+  border: 1px solid var(--blue-800);
+  color: var(--blue-200);
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-back-playlist:hover {
+  border-color: var(--blue-400);
+  background: var(--blue-800);
+}

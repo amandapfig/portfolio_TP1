@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { ArrowLeft } from "lucide-react";
 import { TRACKS } from "./data/playlistData";
 import { EntryExperience } from "./components/EntryExperience";
 import { Sidebar } from "./components/Sidebar";
@@ -11,25 +12,24 @@ export default function App() {
   const [entered, setEntered] = useState(false);
   const [leavingIntro, setLeavingIntro] = useState(false);
   const [activeTrackId, setActiveTrackId] = useState(TRACKS[0].id);
+  const [showPlaylistHome, setShowPlaylistHome] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
-
-  const stageRef = useRef(null);
 
   const handleEnter = () => {
     setLeavingIntro(true);
     setTimeout(() => {
       setEntered(true);
-      setIsPlaying(true);
+      setShowPlaylistHome(true);
+      setIsPlaying(false);
       setLeavingIntro(false);
     }, 520);
   };
 
   const handleSelectTrack = (id) => {
     setActiveTrackId(id);
+    setShowPlaylistHome(false);
     setIsPlaying(true);
-    if (stageRef.current) {
-      stageRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handlePrev = () => {
@@ -45,8 +45,7 @@ export default function App() {
   };
 
   const handleRandom = () => {
-    const others = TRACKS.filter((t) => t.id !== activeTrackId);
-    const pick = others[Math.floor(Math.random() * others.length)];
+    const pick = TRACKS[Math.floor(Math.random() * TRACKS.length)];
     handleSelectTrack(pick.id);
   };
 
@@ -58,7 +57,7 @@ export default function App() {
     <div className="spotify-shell">
       <div className="spotify-grid">
         <Sidebar
-          activeTrackId={activeTrackId}
+          activeTrackId={showPlaylistHome ? null : activeTrackId}
           onSelectTrack={handleSelectTrack}
           isPlaying={isPlaying}
           onBackToIntro={() => {
@@ -68,24 +67,47 @@ export default function App() {
         />
 
         <main className="main-stage">
-          <PlaylistHeader
-            activeTrackId={activeTrackId}
-            onSelectTrack={handleSelectTrack}
-            isPlaying={isPlaying}
-            onTogglePlay={() => setIsPlaying((p) => !p)}
-            onRandomTrack={handleRandom}
-          />
+          {showPlaylistHome ? (
+            <PlaylistHeader
+              activeTrackId={null}
+              onSelectTrack={handleSelectTrack}
+              isPlaying={isPlaying}
+              onTogglePlay={() => handleSelectTrack(TRACKS[0].id)}
+              onRandomTrack={handleRandom}
+            />
+          ) : (
+            <div className="track-only-view">
+              <div className="track-topbar">
+                <button
+                  className="btn-back-playlist"
+                  onClick={() => {
+                    setShowPlaylistHome(true);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  <ArrowLeft size={16} />
+                  <span>Voltar para a Playlist</span>
+                </button>
+              </div>
 
-          <div ref={stageRef} className="track-content-anchor">
-            <TrackContent activeTrackId={activeTrackId} />
-          </div>
+              <div className="track-content-anchor">
+                <TrackContent activeTrackId={activeTrackId} />
+              </div>
+            </div>
+          )}
         </main>
       </div>
 
       <PlayerBar
         activeTrackId={activeTrackId}
         isPlaying={isPlaying}
-        onTogglePlay={() => setIsPlaying((p) => !p)}
+        onTogglePlay={() => {
+          if (showPlaylistHome) {
+            handleSelectTrack(activeTrackId);
+          } else {
+            setIsPlaying((p) => !p);
+          }
+        }}
         onPrev={handlePrev}
         onNext={handleNext}
       />
