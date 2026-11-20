@@ -1,8 +1,10 @@
-import { Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Globe, Sparkles } from "lucide-react";
 import { ABOUT_TEXTS } from "../../data/playlistData";
 
 export function Sobre() {
-  const about = ABOUT_TEXTS.pt;
+  const [lang, setLang] = useState("pt");
+  const about = ABOUT_TEXTS[lang];
 
   return (
     <section className="track-stage fade-in">
@@ -10,6 +12,22 @@ export function Sobre() {
         <div>
           <span className="track-kicker">FAIXA 01 • WHO AM I?</span>
           <h2>{about.heading}</h2>
+        </div>
+
+        <div className="lang-toggle">
+          <Globe size={15} />
+          <button
+            className={lang === "pt" ? "active" : ""}
+            onClick={() => setLang("pt")}
+          >
+            PT
+          </button>
+          <button
+            className={lang === "en" ? "active" : ""}
+            onClick={() => setLang("en")}
+          >
+            EN
+          </button>
         </div>
       </div>
 

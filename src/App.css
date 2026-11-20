@@ -39,7 +39,7 @@ button {
   }
 }
 
-/* ENTRY EXPERIENCE */
+/* Tela de entrada */
 .entry-screen {
   min-height: 100vh;
   display: grid;
@@ -296,7 +296,7 @@ button {
   color: var(--text-muted);
 }
 
-/* SPOTIFY SHELL */
+/* Estrutura principal */
 .spotify-shell {
   min-height: 100vh;
   padding-bottom: 88px;
@@ -310,7 +310,7 @@ button {
   min-height: calc(100vh - 88px);
 }
 
-/* SIDEBAR */
+/* Menu lateral */
 .sidebar {
   background: var(--blue-900);
   border: 1px solid var(--blue-800);
@@ -450,7 +450,7 @@ button {
   color: var(--text-muted);
 }
 
-/* MAIN STAGE */
+/* Área principal da playlist */
 .main-stage {
   background: linear-gradient(180deg, #0d2154 0%, var(--blue-900) 280px, var(--blue-900) 100%);
   border: 1px solid var(--blue-800);
@@ -594,7 +594,7 @@ button {
   border-color: var(--blue-400);
 }
 
-/* TRACKLIST TABLE */
+/* Lista de faixas */
 .tracklist-table {
   border-top: 1px solid rgba(186, 230, 253, 0.12);
   padding-top: 0.75rem;
@@ -685,7 +685,7 @@ button {
 .mini-eq i:nth-child(2) { animation-delay: 0.2s; }
 .mini-eq i:nth-child(3) { animation-delay: 0.4s; }
 
-/* TRACK CONTENT */
+/* Conteúdo das faixas e Sobre Mim */
 .track-content-anchor {
   padding: 0 1.75rem 2.25rem;
 }
@@ -732,6 +732,31 @@ button {
   font-size: 1.65rem;
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--blue-850);
+  border: 1px solid var(--blue-800);
+  padding: 0.3rem 0.45rem;
+  border-radius: 999px;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.lang-toggle button.active {
+  background: var(--blue-600);
+  color: white;
+}
+
 .glass-card {
   background: var(--blue-850);
   border: 1px solid var(--blue-800);
@@ -756,6 +781,30 @@ button {
   gap: 0.85rem;
   color: var(--text-muted);
   line-height: 1.65;
+}
+
+.about-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.about-photo-frame {
+  flex-shrink: 0;
+  width: 190px;
+  height: 190px;
+  border-radius: 16px;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--blue-400), var(--blue-700));
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
 .traits-grid {
@@ -785,7 +834,7 @@ button {
   line-height: 1.45;
 }
 
-/* SKILLS */
+/* Habilidades */
 .skills-sections {
   display: flex;
   flex-direction: column;
@@ -822,7 +871,7 @@ button {
   border-color: var(--blue-400);
 }
 
-/* PROJECTS */
+/* Projetos */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -918,9 +967,7 @@ button {
   color: white;
 }
 
-
-
-/* BEYOND THE CODE */
+/* Além do código */
 .beyond-banner {
   background: linear-gradient(90deg, rgba(37, 99, 235, 0.22), rgba(56, 189, 248, 0.12));
   border: 1px solid var(--blue-800);
@@ -974,7 +1021,7 @@ button {
   line-height: 1.45;
 }
 
-/* JOURNEY */
+/* Formação e idiomas */
 .journey-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -1018,7 +1065,7 @@ button {
   margin-bottom: 0;
 }
 
-/* CONNECT */
+/* Contato */
 .connect-layout {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1060,7 +1107,6 @@ button {
   font-size: 0.9rem;
   word-break: break-word;
 }
-
 
 .connect-form {
   display: flex;
@@ -1110,7 +1156,7 @@ button {
   font-size: 0.88rem;
 }
 
-/* PLAYER BAR */
+/* Barra fixa do player */
 .player-bar {
   position: fixed;
   bottom: 0;
@@ -1212,7 +1258,7 @@ button {
   justify-content: flex-end;
 }
 
-/* RESPONSIVE */
+/* Responsividade */
 @media (max-width: 960px) {
   .entry-showcase {
     grid-template-columns: 1fr;
@@ -1255,33 +1301,6 @@ button {
   .player-progress-wrap {
     display: none;
   }
-}
-
-.about-profile-card {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-}
-
-.about-photo-frame {
-  flex-shrink: 0;
-  width: 190px;
-  height: 190px;
-  border-radius: 16px;
-  padding: 4px;
-  background: linear-gradient(135deg, var(--blue-400), var(--blue-700));
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
-}
-
-.about-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-}
-
-@media (max-width: 680px) {
   .about-profile-card {
     flex-direction: column;
     text-align: center;

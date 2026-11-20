@@ -79,6 +79,21 @@ export const ABOUT_TEXTS = {
       { title: "Trabalho em equipe", desc: "Experiência em projetos colaborativos acadêmicos." },
     ],
   },
+  en: {
+    badge: "Looking for my first Tech Internship",
+    heading: "Hi! I’m Amanda Pimenta",
+    paragraphs: [
+      "I am a Software Engineering student at the Pontifical Catholic University of Minas Gerais (PUC Minas).",
+      "I am a creative, curious, and communicative person interested in technology, software engineering, and innovation. I enjoy learning new things, working in teams, exploring ideas, and turning knowledge into practical projects.",
+      "Currently, I am looking for my first internship opportunity in technology, with focus on software development and web development.",
+    ],
+    traits: [
+      { title: "Creative", desc: "Driven to build thoughtful, expressive, and original solutions." },
+      { title: "Curious", desc: "Always excited to learn new tools and software concepts." },
+      { title: "Communicative", desc: "Clear communication and openness to feedback." },
+      { title: "Team Player", desc: "Passionate about collaborative projects and shared goals." },
+    ],
+  },
 };
 
 export const SKILLS_GROUPS = [
