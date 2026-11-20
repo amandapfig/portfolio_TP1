@@ -50,7 +50,7 @@ export function EntryExperience({ onEnter, isLeaving }) {
                 <span className="btn-play-circle">
                   <Play size={18} fill="currentColor" />
                 </span>
-                Começar a ouvir
+                Começar
               </button>
               <span className="entry-meta">6 faixas • Engenharia de Software PUC Minas</span>
             </div>
