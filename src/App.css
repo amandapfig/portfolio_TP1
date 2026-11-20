@@ -481,8 +481,43 @@ button {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  overflow: hidden;
 }
 
+.playlist-cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.playlist-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 18, 43, 0.08) 0%,
+    rgba(4, 9, 22, 0.82) 100%
+  );
+  z-index: 1;
+}
+
+.cover-tag,
+.playlist-cover strong {
+  position: relative;
+  z-index: 2;
+}
+
+.cover-art-ring {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  color: var(--blue-200);
+  opacity: 0.95;
+  z-index: 2;
+}
 .cover-art-ring {
   position: absolute;
   top: 1.1rem;
@@ -1393,22 +1428,55 @@ button {
   .entry-preview-tracks {
     justify-content: center;
   }
+.spotify-shell {
+    padding-bottom: 0;
+  }
   .spotify-grid {
     grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
+  }
+  .main-stage {
+    min-width: 0;
+    border: none;
+    border-radius: 0;
+    min-height: 100vh;
   }
   .sidebar {
-    position: sticky;
-    top: 0.5rem;
-    z-index: 50;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 80;
+    width: auto;
     height: auto;
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 0.6rem;
+    align-items: flex-end;
+  }
+  .sidebar-brand {
+    display: none;
   }
   .mobile-menu-btn {
     display: grid;
+    width: 44px;
+    height: 44px;
+    background: rgba(8, 18, 43, 0.92);
+    border: 1px solid var(--blue-600);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
   .sidebar-drawer {
     display: none;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--blue-800);
+    width: min(300px, calc(100vw - 2rem));
+    max-height: calc(100vh - 5.5rem);
+    overflow-y: auto;
+    background: var(--blue-900);
+    border: 1px solid var(--blue-700);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
   }
   .sidebar-drawer.open {
     display: flex;
@@ -1417,25 +1485,37 @@ button {
   .connect-layout {
     grid-template-columns: 1fr;
   }
+  .connect-cards,
+  .connect-form {
+    min-width: 0;
+  }
+  .connect-card svg {
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 680px) {
+  .playlist-hero,
+  .track-content-anchor,
+  .track-topbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .hero-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-creator,
+  .hero-actions {
+    justify-content: center;
+  }
   .hide-sm {
     display: none;
   }
   .tracklist-head,
   .tracklist-row {
     grid-template-columns: 34px 1fr 54px;
-  }
-  .player-bar {
-    grid-template-columns: 1fr auto;
-    height: auto;
-    padding: 0.65rem 1rem;
-    gap: 0.75rem;
-  }
-  .player-right,
-  .player-progress-wrap {
-    display: none;
   }
   .about-profile-card {
     flex-direction: column;
@@ -1446,4 +1526,3 @@ button {
     height: 160px;
   }
 }
-

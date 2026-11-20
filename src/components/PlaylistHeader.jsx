@@ -12,12 +12,16 @@ export function PlaylistHeader({
     <section className="playlist-hero">
       <div className="hero-banner">
         <div className="playlist-cover">
+          <img
+            src="/images/amanda.jpg"
+            alt="Capa Amanda Pimenta"
+            className="playlist-cover-img"
+          />
+          <div className="playlist-cover-overlay" />
           <div className="cover-art-ring">
-            <Disc3 size={48} className={isPlaying ? "spin-slow" : ""} />
+            <Disc3 size={34} className={isPlaying ? "spin-slow" : ""} />
           </div>
-          <strong>AMANDA PIMENTA</strong>
         </div>
-
         <div className="hero-details">
           <span className="public-label">PLAYLIST PÚBLICA</span>
           <h1>{PLAYLIST_INFO.title}</h1>
