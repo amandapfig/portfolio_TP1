@@ -55,9 +55,9 @@
 ---
 
 ## 🔗 Links Úteis
-* 🌐 **Demo Online:** [Acesse o Portfólio na Vercel](https://seu-link-da-vercel.vercel.app)
+* 🌐 **Demo Online:** [Acesse o Portfólio na Vercel](https://portfolio-tp-1-woad.vercel.app/)
   > 💻 **Descrição:** Link para a aplicação publicada em ambiente de produção na Vercel.
-* 💻 **Repositório:** [Acesse no GitHub](https://github.com/amandapfig/SEU-REPOSITORIO)
+* 💻 **Repositório:** [Acesse no GitHub](https://github.com/amandapfig/portfolio_TP1.git)
   > 📂 **Descrição:** Código-fonte completo do projeto versionado no GitHub.
 * 🎨 **Protótipo (Figma):** [Acesse os Wireframes](https://www.figma.com/make/KETOrbBlganmW9dziwLTNy/Portf%C3%B3lio-Amanda-Pimenta?t=X3oFeSuUbYKslO8F-20&fullscreen=1)
   > ✏️ **Descrição:** Protótipos de média fidelidade utilizados no planejamento visual das telas.
@@ -267,7 +267,7 @@ amanda-pimenta-portfolio/
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
-| Amanda Pimenta | <div align="center"><img src="./public/images/amanda.jpg" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/amandapfig"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/SEU-LINKEDIN"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:amandapfigueiredo55@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Amanda Pimenta | <div align="center"><img src="./public/images/amanda.jpg" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/amandapfig"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/amandapimentaf"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:amandapfigueiredo55@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
 
 ---
 
