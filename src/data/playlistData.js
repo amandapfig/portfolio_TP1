@@ -129,14 +129,14 @@ export const SKILLS_GROUPS = [
 ];
 export const PROJECTS = [
   {
-    id: "pedalaki",
+    id: "pimenta-sabor",
     trackCode: "EP 01",
-    title: "PEDALAKI",
-    techs: ["HTML", "CSS", "JavaScript"],
+    title: "PIMENTASABOR",
+    techs: ["HTML", "CSS", "JavaScript", "JSON Server"],
     description:
-      "Plataforma para registro e acompanhamento de problemas em ciclovias. Solução voltada à segurança, mobilidade urbana e incentivo ao ciclismo.",
-    githubUrl: "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2026-1-ti1-7620100-pedalaki.git",
-    image: "/images/pedalaki.png",
+      "Plataforma de indicações de restaurantes em Belo Horizonte desenvolvida na disciplina de DIW (1º semestre), com carrossel, cards, gráfico, sistema de login/cadastro, favoritos e CRUD completo para administradores.",
+    githubUrl: "https://github.com/amandapfig/Trabalho-de-DIW---1.git",
+    image: "/images/restaurante.png",
     accent: "from-sky",
   },
   {
@@ -173,14 +173,14 @@ export const PROJECTS = [
     accent: "from-indigo",
   },
   {
-    id: "pimenta-sabor",
+    id: "pedalaki",
     trackCode: "EP 05",
-    title: "PIMENTASABOR",
-    techs: ["HTML", "CSS", "JavaScript", "JSON Server"],
+    title: "PEDALAKI",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
-      "Plataforma de indicações de restaurantes em Belo Horizonte desenvolvida na disciplina de DIW (1º semestre), com carrossel, cards, gráfico, sistema de login/cadastro, favoritos e CRUD completo para administradores.",
-    githubUrl: "https://github.com/amandapfig/Trabalho-de-DIW---1.git",
-    image: "/images/restaurante.png",
+      "Plataforma para registro e acompanhamento de problemas em ciclovias. Solução voltada à segurança, mobilidade urbana e incentivo ao ciclismo.",
+    githubUrl: "https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2026-1-ti1-7620100-pedalaki.git",
+    image: "/images/pedalaki.png",
     accent: "from-sky",
   },
 ];
