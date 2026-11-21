@@ -55,15 +55,7 @@ export function EntryExperience({ onEnter, isLeaving }) {
               <span className="entry-meta">6 faixas • Engenharia de Software PUC Minas</span>
             </div>
 
-            <div className="entry-preview-tracks">
-              {TRACKS.slice(0, 3).map((t) => (
-                <div key={t.id} className="preview-chip">
-                  <span>{t.number}</span>
-                  {t.title}
-                </div>
-              ))}
-              <div className="preview-chip muted">+ 3 faixas</div>
-            </div>
+            
           </div>
         </div>
       </div>
